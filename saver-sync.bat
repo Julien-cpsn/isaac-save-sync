@@ -1,7 +1,7 @@
 @echo off
 set "isaacPath=%cd%"
 cd /d %1
-git pull
+git pull --strategy-option theirs
 cd /d %isaacPath%
 start /wait isaac-ng.exe
 cd /d %1
